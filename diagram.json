@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-v1", "id": "esp1", "top": 140, "left": 190, "attrs": {} },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": 60, "left": 390, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 220, "left": 410, "attrs": { "color": "red" } },
+    { "type": "wokwi-buzzer", "id": "buzzer1", "top": 300, "left": 410, "attrs": {} },
+    { "type": "wokwi-ssd1306", "id": "oled1", "top": 60, "left": 10, "attrs": {} }
+  ],
+  "connections": [
+    [ "pir1:VCC", "esp1:3V3", "red", [] ],
+    [ "pir1:GND", "esp1:GND", "black", [] ],
+    [ "pir1:OUT", "esp1:D13", "yellow", [] ],
+    [ "led1:A", "esp1:D12", "red", [] ],
+    [ "led1:K", "esp1:GND", "black", [] ],
+    [ "buzzer1:1", "esp1:D14", "green", [] ],
+    [ "buzzer1:2", "esp1:GND", "black", [] ],
+    [ "oled1:SDA", "esp1:D21", "blue", [] ],
+    [ "oled1:SCL", "esp1:D22", "purple", [] ],
+    [ "oled1:VCC", "esp1:3V3", "red", [] ],
+    [ "oled1:GND", "esp1:GND", "black", [] ]
+  ],
+  "dependencies": {}
+}

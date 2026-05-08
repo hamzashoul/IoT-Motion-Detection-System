@@ -222,7 +222,3 @@ arduino-cli compile --fqbn esp32:esp32:esp32 IOT-project.ino --output-dir build
 - ✅ Export rapport PDF
 
 ---
-
-## 📄 Licence
-
-MIT License — Free to use and modify.
